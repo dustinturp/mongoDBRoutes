@@ -60,11 +60,11 @@ const ReactionSchema = new Schema(
 );
 
 // get count of friends
-ThoughtSchema.virtual("ReactionCount").get(function () {
+ThoughtSchema.virtual('ReactionCount').get(function () {
   return this.reactions.length;
 });
 
 
-const Thought = model("Thought", ThoughtSchema);
+const Thought = model('Thought', ThoughtSchema);
 
 module.exports = Thought;
