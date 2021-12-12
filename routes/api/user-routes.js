@@ -10,7 +10,7 @@ deleteUser
 
 // /api/pizzas
 router
-    .route('/')
+    .route('/api/users')
     .get(getAllUsers)
     .post(createUser);
 
@@ -19,5 +19,8 @@ router
 .get(getUserById)
 .put(updateUser)
 .delete(deleteUser);
+
+router
+.route('/api/users/:userId/friends/:friendId')
 
 module.exports = router;
