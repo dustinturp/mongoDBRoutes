@@ -1,26 +1,19 @@
 # mongoDBRoutes
-test routes for CRUD operations with mongo
+Test routes for CRUD operations with mongoDB. Create a user Collection in MongoDB.
+Create associated text with a user.
 
-
-
-## node packages used 
+## Node Packages Used 
 mongoose 
 express
 
 
-## tests
-create default user 
+## Tests
+create default user with postman or another API route tester. 
+
 ```
 {
     "username": "thisName",
-    "email": "test@email.com ",
-    "thoughts": ["this is Thought", "thought2"],
-    "friends": ["kim", "kimsMom"]
+    "email": "test@email.com "
 }
 ```
-61b6d308e7801e1fd5976408
-61b6d331e7801e1fd597640a
-
-```
-thoughts
 
