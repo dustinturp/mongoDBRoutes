@@ -6,12 +6,12 @@ getUserById,
 createUser,
 updateUser,
 deleteUser 
-} = require('../../controllers/user_controller')
+} = require('../../controllers/user-controller')
 
 // /api/pizzas
 router
-    .route('/api/users')
-    .get(getAllUsers)
+    .route('/') 
+    .get(getAllUsers) // /api/users
     .post(createUser);
 
 router
@@ -20,7 +20,7 @@ router
 .put(updateUser)
 .delete(deleteUser);
 
-router
-.route('/api/users/:userId/friends/:friendId')
+// router
+// .route('/api/users/:userId/friends/:friendId')
 
 module.exports = router;
